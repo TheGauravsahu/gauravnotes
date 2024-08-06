@@ -33,7 +33,7 @@ const NotesDetails = ({deleteNote}) => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/notes/${id}/`)
+      .get(`https://gnotes.pythonanywhere.com/api/notes/${id}/`)
       .then(function (response) {
         console.log(response);
         setNote(response.data);
