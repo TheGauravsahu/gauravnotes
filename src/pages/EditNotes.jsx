@@ -14,7 +14,7 @@ const EditNotes = ({updateNote}) => {
 
   useEffect(() => {
     axios
-      .get(`https://gnotes.pythonanywhere.com/${id}/`)
+      .get(`https://gnotes.pythonanywhere.com/api/notes/${id}/`)
       .then(function (response) {
         console.log(response);
         setTitle(response.data.title);
